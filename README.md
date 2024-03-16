@@ -1,51 +1,33 @@
 Loki
 ====
 
-A C++ Template library, developed by  Andrei Alexandrescu, the author of the book _Modern C++ Design_.
+A C++ Template library, developed by  Andrei Alexandrescu.
 
-Source code in this project is tied to _Modern C++ Design_. For the mostly recent updates, please refer to the official project in SourceForge.net: http://sourceforge.net/projects/loki-lib/files/Loki/
+For more information about the original loki please consult the original README, which was moved to [README.loki.md](/README.loki.md)
 
-The purpose to create this repository is just to do experiments in _Modern C++ Design_.
-
-Quotation from the original readme.txt
+Loki11
 ====
 
-Last update: Aug 29, 2002
+Beware! Loki11 ist still work in progress. It's an ongoing attempt to reach the following goal:
 
-Directions:
+This version of loki brings it into the modern age, but stays before the [big bang](https://youtu.be/yUIFdL3D0Vk?t=280) - that means it contents itself with a C++11 toolchain. The reason for the latter is that a lot of projects still need to lean on C++ 11/14/17. This is a matching version of loki for these projects.
 
-To use Loki, simply extract the files from the archive, give your compiler access to their path, and include them appropriately in your code via #include.
+Original License Statement
+====
 
-If you use the small object allocator directly or indirectly (through the Functor class) you must add SmallObj.cpp to your project/makefile.
-
-If you use Singletons with longevity you must add Singleton.cpp to your project/makefile.
-
-
-Compatibility:
-
-Supported Compilers:
-Gcc v2.95.3
-Microsoft Visual C++ v7.0
-Borland C++ Builder v6.0
-
-Mostly Supported:
-CodeWarrior 6.0
-
-TypeList:
-Microsoft Visual C++ v6.0
-
-
-CodeWarrior has a problem with the Conversion template (see TypeManip.h) and, though it compiles it, it doesn't provide correct results. Consequently, the DerivedToFront algorithm in Typelist.h does not function. This affects the static dispatcher in Multimethods.h. As a fix, you must order the types (putting the most derived ones in the front) when providing the typelist argument to StaticDispatcher.
-
-
-
-More info:
-
-http://moderncppdesign.com
-
-http://sourceforge.net/projects/loki-lib/
-
-http://sourceforge.net/projects/loki-exp/
-
-
-
+```
+////////////////////////////////////////////////////////////////////////////////
+// The Loki Library
+// Copyright (c) 2001 by Andrei Alexandrescu
+// This code accompanies the book:
+// Alexandrescu, Andrei. "Modern C++ Design: Generic Programming and Design 
+//     Patterns Applied". Copyright (c) 2001. Addison-Wesley.
+// Permission to use, copy, modify, distribute and sell this software for any 
+//     purpose is hereby granted without fee, provided that the above copyright 
+//     notice appear in all copies and that both that copyright notice and this 
+//     permission notice appear in supporting documentation.
+// The author or Addison-Wesley Longman make no representations about the 
+//     suitability of this software for any purpose. It is provided "as is" 
+//     without express or implied warranty.
+////////////////////////////////////////////////////////////////////////////////
+```
